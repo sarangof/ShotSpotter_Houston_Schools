@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Houston schools and ShotSpotter</title>
+  <!-- Link to Semantic UI stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+   <!-- Link to your custom CSS -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <!-- Logo container -->
+
+  <div class="ui container">
+    <div class="logo-container">
+      <img src="https://raw.githubusercontent.com/sarangof/Virgenes_MDE/main/logo/1linelightgreenb.png" alt="Logo" class="logo">
+    </div>
+    <!-- Title -->
+    <h1 class="ui header">Houston schools and ShotSpotter</h1>
+    
+    <!-- Introductory Text -->
+        <p>This is from <a href="https://www.edgelands.institute/">Instituto Edgelands</a> .</p>
+    
+    <!-- Iframe -->
+    <div class="ui segment" id="map">
+    <!--   <h2 class="ui header">Embedded Content</h2> -->
+      <iframe src="school_map.html"></iframe>
+    </div>
+    <div id="legend"></div>
+    
+    <!-- More In-depth Text -->
+    <div class="ui segment">
+          <!-- <h2 class="ui header">More In-depth Text</h2> -->
+      <p> Schools in Houston y tal. </p>
+    </div>
+  </div>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-d4QbdXjvkwDclpC/NR8D3yKw/nB+2+lO8B52WTi1ThY=" crossorigin=""></script>
+</body>
+</html>

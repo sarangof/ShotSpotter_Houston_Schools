@@ -1,0 +1,89 @@
+ /* Import Google Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,300;1,300&display=swap'); */
+@import url('//fonts.googleapis.com/css2?family=Georama:ital,wght@0,300;1,300&display=swap');
+/* Custom styles */
+body {
+    padding: 10px;
+    font-family: 'Georama'; /* Use Georama font as fallback */
+    font-size: 20px;
+}
+/* Example of custom styling for headers */
+h1.ui.header {
+    color: #333; /* Change the color of h1 headers */
+    text-align: center; /* Center align the header */
+}
+/* Example of custom styling for paragraphs */
+p {
+    color: #666; /* Change the color of paragraphs */
+}
+/* Example of custom styling for iframes */
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    font-family: 'Georama';
+}
+
+#legend {
+    background: white;
+    padding: 10px;
+    font-family: 'Georama', sans-serif !important;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+}
+
+.legend-item i {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+/* Example of custom styling for segments */
+.ui.segment {
+    border: 1px solid #ccc; /* Change the border color of segments */
+    padding: 20px; /* Change the padding of segments */
+    margin-bottom: 20px; /* Change the margin bottom of segments */
+    background-color: #f9f9f9; /* Change the background color of segments */
+    border-radius: 5px; /* Add border radius */
+}
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
+    h1.ui.header {
+        font-size: 50px; /* Decrease font size for smaller screens */
+    }
+    iframe {
+        height: 300px; /* Decrease iframe height for smaller screens */
+    }
+}
+
+/* Apply Georama font to Folium tooltips */
+.leaflet-tooltip-pane {
+    font-family: 'Georama', sans-serif !important;
+}
+
+/* Apply Georama font to Folium popups */
+.leaflet-popup-content {
+    font-family: 'Georama', sans-serif !important;
+}
+/* CSS for positioning the logo */
+.logo-container {
+    /*position: fixed; /* Fix the position of the container */
+    top: 20px; /* Adjust the distance from the top */
+    right: 20px; /* Adjust the distance from the right */
+    z-index: 999;
+
+}
+
+.logo {
+    width: 140px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    /* Add any additional styling for the logo */
+}
